@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUISchedulerPerformanceTest.Scheduler10KAppointmentsPage"
+             xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler"
+             xmlns:local="clr-namespace:MAUISchedulerPerformanceTest"
+             x:DataType="local:SchedulerPerformanceViewModel"
+             Title="Scheduler10KAppointmentsPage">
+
+    <scheduler:SfScheduler x:Name="scheduler"
+                           Loaded="scheduler_Loaded" 
+                           AppointmentsSource="{Binding Appointments}">
+        <scheduler:SfScheduler.AppointmentMapping>
+            <scheduler:SchedulerAppointmentMapping Subject="Subject"
+                                                   StartTime="StartTime"
+                                                   EndTime="EndTime"
+                                                   Notes="Notes"
+                                                   Location="Location"
+                                                   IsAllDay="IsAllDay"
+                                                   Background="BackgroundColor"
+                                                   Id="Id"/>
+        </scheduler:SfScheduler.AppointmentMapping>
+    </scheduler:SfScheduler>
+
+</ContentPage>
