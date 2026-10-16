@@ -26,15 +26,6 @@
                     case "10K Appointments":
                         await Navigation.PushAsync(new Scheduler10KAppointmentsPage());
                         break;
-                    case "50K Appointments":
-                        await Navigation.PushAsync(new Scheduler50KAppointmentsPage());
-                        break;
-                    case "100K Appointments":
-                        await Navigation.PushAsync(new Scheduler100KAppointmentsPage());
-                        break;
-                    case "Hierarchical Resources":
-                        await Navigation.PushAsync(new HierarchicalResources());
-                        break;
                 }
             }
         }

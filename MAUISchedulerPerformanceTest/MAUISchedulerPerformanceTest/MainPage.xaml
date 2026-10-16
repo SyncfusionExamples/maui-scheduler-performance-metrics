@@ -21,18 +21,6 @@
                     Clicked="OnButtonClicked"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"/>
-            <Button Text="50K Appointments"
-                    Clicked="OnButtonClicked"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"/>
-            <Button Text="100K Appointments"
-                    Clicked="OnButtonClicked"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"/>
-            <Button Text="Hierarchical Resources"
-                    Clicked="OnButtonClicked"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"/>
         </VerticalStackLayout>
     </ScrollView>
 

@@ -78,28 +78,16 @@
 	  <Compile Update="SchedulerPages\Scheduler1KAppointmentsPage.xaml.cs">
 	    <DependentUpon>Scheduler1KAppointmentsPage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="SchedulerPages\Scheduler50KAppointmentsPage.xaml.cs">
-	    <DependentUpon>Scheduler50KAppointmentsPage.xaml</DependentUpon>
-	  </Compile>
 	  <Compile Update="SchedulerPages\Scheduler5KAppointmentsPage.xaml.cs">
 	    <DependentUpon>Scheduler5KAppointmentsPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="SchedulerPages\HierarchicalResources.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="SchedulerPages\Scheduler100KAppointmentsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="SchedulerPages\Scheduler10KAppointmentsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="SchedulerPages\Scheduler1KAppointmentsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="SchedulerPages\Scheduler50KAppointmentsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="SchedulerPages\Scheduler5KAppointmentsPage.xaml">
