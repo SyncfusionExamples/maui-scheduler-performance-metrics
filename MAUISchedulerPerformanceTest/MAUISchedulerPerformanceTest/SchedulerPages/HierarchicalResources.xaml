@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUISchedulerPerformanceTest.HierarchicalResources"
+             xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler"
+             xmlns:local="clr-namespace:MAUISchedulerPerformanceTest"
+             x:DataType="local:SchedulerPerformanceViewModel"
+             Title="HierarchicalResources">
+
+    <scheduler:SfScheduler x:Name="scheduler"
+                           Loaded="scheduler_Loaded">
+        <scheduler:SfScheduler.ResourceView>
+            <scheduler:SchedulerResourceView Resources="{Binding Resources}">
+                <scheduler:SchedulerResourceView.Mapping>
+                    <scheduler:SchedulerResourceMapping Name="Name"
+                                                        Id="Id"
+                                                        GroupId="GroupId"
+                                                        Background="BackgroundColor"
+                                                        Foreground="ForegroundColor"
+                                                        IsNodeCollapsed="IsNodeCollapsed"/>
+                </scheduler:SchedulerResourceView.Mapping>
+            </scheduler:SchedulerResourceView>
+        </scheduler:SfScheduler.ResourceView>
+    </scheduler:SfScheduler>
+    
+</ContentPage>
